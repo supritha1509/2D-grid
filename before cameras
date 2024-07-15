@@ -1,0 +1,24 @@
+##Commands used for the project from turtlebot3 guide manual##
+
+##Downloading Ubuntu 20.04.6##
+commands for foxy version of ros2
+
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh
+$ sudo chmod 755 ./install_ros2_foxy.sh
+$ bash ./install_ros2_foxy.sh
+$ sudo apt-get install ros-foxy-gazebo-*
+$ sudo apt install ros-foxy-cartographer
+$ sudo apt install ros-foxy-cartographer-ros
+$ sudo apt install ros-foxy-navigation2
+$ sudo apt install ros-foxy-nav2-bringup
+$ source ~/.bashrc
+$ sudo apt install ros-foxy-dynamixel-sdk
+$ sudo apt install ros-foxy-turtlebot3-msgs
+$ sudo apt install ros-foxy-turtlebot3
+$ ros2 topic list
+$mkdir turtlrbot3_ws/src
+$ cd ~/turtlebot3_ws/src/
+$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ cd ~/turtlebot3_ws && colcon build --symlink-install
+$ export TURTLEBOT3_MODEL=waffle_pi
+$ ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
